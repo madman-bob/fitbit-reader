@@ -23,6 +23,9 @@
     "@fitbit/sdk-cli": "^1.7.0",
     "prettier": "^1.19.1"
   },
+  "dependencies": {
+    "events": "3.0.0"
+  },
   "prettier": {
     "tabWidth": 4,
     "jsxBracketSameLine": true
