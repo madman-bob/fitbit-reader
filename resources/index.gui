@@ -1,2 +1,45 @@
 <svg>
+    <symbol id="feed-item">
+        <textarea id="title"></textarea>
+        <textarea id="description"></textarea>
+    </symbol>
+
+    <rect id="background"/>
+
+    <textarea id="status">Loading...</textarea>
+
+    <use href="#tile-list" id="itemListUI">
+        <var id="reorder-enabled" value="0"/>
+
+        <use href="#tile-list-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#tile-list-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#tile-list-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#tile-list-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#tile-list-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#tile-list-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#tile-list-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#tile-list-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#tile-list-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#tile-list-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+    </use>
 </svg>
