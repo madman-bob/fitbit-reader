@@ -24,7 +24,8 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
-    "events": "3.0.0"
+    "events": "3.0.0",
+    "tinyqueue": "2.0.3"
   },
   "prettier": {
     "tabWidth": 4,

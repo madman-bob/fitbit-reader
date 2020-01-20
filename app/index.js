@@ -6,5 +6,5 @@ import FeedUI from "./feed-ui";
 let feedUI = new FeedUI(document);
 
 feeds.on("items", items => {
-    feedUI.updateUI(items);
+    feedUI.updateUI(items.data);
 });
