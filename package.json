@@ -4,7 +4,9 @@
     "appDisplayName": "Reader",
     "iconFile": "resources/icon.png",
     "wipeColor": "#fc6b3a",
-    "requestedPermissions": [],
+    "requestedPermissions": [
+      "access_internet"
+    ],
     "buildTargets": [
       "higgs",
       "meson",
@@ -26,7 +28,9 @@
   "dependencies": {
     "fitbit-asap": "1.2.3",
     "events": "3.0.0",
-    "tinyqueue": "2.0.3"
+    "tinyqueue": "2.0.3",
+    "xmldom": "0.2.1",
+    "moment": "2.24.0"
   },
   "prettier": {
     "tabWidth": 4,
