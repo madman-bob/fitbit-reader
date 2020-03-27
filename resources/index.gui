@@ -1,45 +1,61 @@
 <svg>
     <symbol id="feed-item">
-        <textarea id="title"></textarea>
-        <textarea id="description"></textarea>
+        <use href="#mixed-text-center-top" y="16">
+            <set href="#header/text" attributeName="text-length" to="128"/>
+            <set href="#header/text" attributeName="fill" to="white"/>
+            <set href="#copy/text" attributeName="text-length" to="256"/>
+            <set href="#copy/text" attributeName="fill" to="white"/>
+        </use>
     </symbol>
 
     <rect id="background"/>
 
     <textarea id="status">Loading...</textarea>
 
-    <use href="#tile-list" id="itemListUI">
-        <var id="reorder-enabled" value="0"/>
+    <use href="#panoramaview" id="itemListUI">
+        <use href="#panoramaview-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#panoramaview-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#panoramaview-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#panoramaview-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#panoramaview-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#panoramaview-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#panoramaview-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#panoramaview-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#panoramaview-item" class="item">
+            <use href="#feed-item"/>
+        </use>
+        <use href="#panoramaview-item" class="item">
+            <use href="#feed-item"/>
+        </use>
 
-        <use href="#tile-list-item" class="item">
-            <use href="#feed-item"/>
-        </use>
-        <use href="#tile-list-item" class="item">
-            <use href="#feed-item"/>
-        </use>
-        <use href="#tile-list-item" class="item">
-            <use href="#feed-item"/>
-        </use>
-        <use href="#tile-list-item" class="item">
-            <use href="#feed-item"/>
-        </use>
-        <use href="#tile-list-item" class="item">
-            <use href="#feed-item"/>
-        </use>
-        <use href="#tile-list-item" class="item">
-            <use href="#feed-item"/>
-        </use>
-        <use href="#tile-list-item" class="item">
-            <use href="#feed-item"/>
-        </use>
-        <use href="#tile-list-item" class="item">
-            <use href="#feed-item"/>
-        </use>
-        <use href="#tile-list-item" class="item">
-            <use href="#feed-item"/>
-        </use>
-        <use href="#tile-list-item" class="item">
-            <use href="#feed-item"/>
+        <use id="pagination-dots" class="pagination" href="#pagination-widget" y="8">
+            <use href="#pagination-dot"/>
+            <use href="#pagination-dot"/>
+            <use href="#pagination-dot"/>
+            <use href="#pagination-dot"/>
+            <use href="#pagination-dot"/>
+            <use href="#pagination-dot"/>
+            <use href="#pagination-dot"/>
+            <use href="#pagination-dot"/>
+            <use href="#pagination-dot"/>
+            <use href="#pagination-dot"/>
+            <use href="#pagination-highlight-dot"/>
         </use>
     </use>
 </svg>

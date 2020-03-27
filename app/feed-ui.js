@@ -31,8 +31,8 @@ export default class FeedUI {
             return;
         }
 
-        itemUI.getElementById("title").text = item.title;
-        itemUI.getElementById("description").text = item.description;
+        itemUI.getElementById("header").text = item.title;
+        itemUI.getElementById("copy").text = item.description;
 
         itemUI.style.display = "inline";
     }
