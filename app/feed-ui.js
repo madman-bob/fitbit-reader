@@ -21,7 +21,7 @@ export default class FeedUI {
 
     updateItems(items) {
         for (let i = 0; i < this.itemUIs.length; i++) {
-            this.updateItem(this.itemUIs[i], items[i]);
+            setTimeout(this.updateItem, 0, this.itemUIs[i], items[i]);
         }
     }
 
