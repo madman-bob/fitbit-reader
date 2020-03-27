@@ -1,3 +1,10 @@
+function truncate(str, maxLength) {
+    if (str.length <= maxLength) {
+        return str;
+    }
+    return str.substr(0, maxLength - 3) + "...";
+}
+
 export default class FeedUI {
     constructor(document) {
         this.statusText = document.getElementById("status");
@@ -31,8 +38,8 @@ export default class FeedUI {
             return;
         }
 
-        itemUI.getElementById("header").text = item.title;
-        itemUI.getElementById("copy").text = item.description;
+        itemUI.getElementById("header").text = truncate(item.title, 128);
+        itemUI.getElementById("copy").text = truncate(item.description, 256);
 
         itemUI.style.display = "inline";
     }
