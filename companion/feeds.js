@@ -1,6 +1,6 @@
 import { settingsStorage } from "settings";
 
-let feedUrls = JSON.parse(settingsStorage.getItem("feedUrls")).map(
+let feedUrls = (JSON.parse(settingsStorage.getItem("feedUrls")) || []).map(
     item => item.name
 );
 
