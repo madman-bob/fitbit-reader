@@ -19,10 +19,23 @@ export default class FeedUI {
             this.updateItems(items);
 
             this.itemListUI.style.display = "inline";
-            this.statusText.text = "";
+            this.statusText.style.display = "none";
+
+            this.statusText.getElementById("header").text = "";
+            this.statusText.getElementById("copy").text = "";
         } else {
             this.itemListUI.style.display = "none";
-            this.statusText.text = "Loading...";
+            this.statusText.style.display = "inline";
+
+            if (items) {
+                this.statusText.getElementById("header").text =
+                    "No feeds available";
+                this.statusText.getElementById("copy").text =
+                    "Add feeds to the Reader settings app on your phone, and sync, to start reading.";
+            } else {
+                this.statusText.getElementById("header").text = "Loading...";
+                this.statusText.getElementById("copy").text = "";
+            }
         }
     }
 

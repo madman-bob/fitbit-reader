@@ -10,7 +10,13 @@
 
     <rect id="background"/>
 
-    <textarea id="status">Loading...</textarea>
+    <use href="#mixed-text-center-mid" id="status">
+        <set href="#header/text" attributeName="text-length" to="64"/>
+        <set href="#header/text" attributeName="text-buffer" to="Loading..."/>
+        <set href="#header/text" attributeName="fill" to="white"/>
+        <set href="#copy/text" attributeName="text-length" to="128"/>
+        <set href="#copy/text" attributeName="fill" to="white"/>
+    </use>
 
     <use href="#panoramaview" id="itemListUI">
         <use href="#panoramaview-item" class="item">
