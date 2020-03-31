@@ -2,6 +2,10 @@
 
 An RSS/Atom feed reader for Fitbit.
 
+Read the news from all your favorite sites in one place.
+
+![Screenshot](screenshots/ionic.png)
+
 ## Usage
 
 1. Add feed URIs to settings companion app.
